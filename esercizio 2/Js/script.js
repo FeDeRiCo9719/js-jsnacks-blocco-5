@@ -65,8 +65,7 @@ var zucchine = [
         varietà : 10,
         peso : 80,
         lunghezza : 9
-    },
-    
+    }, 
 ]
 
 
@@ -75,12 +74,11 @@ var pesoZucchine = 0;
 
 for ( i=0; i<zucchine.length; i++ ) {
     var pesoZucchine = pesoZucchine + (zucchine[i]['peso']);
-    console.log(zucchine[i]['peso']);
+    // console.log(zucchine[i]['peso']);
 }
 
-
 // var pesoZucchine = (zucchine[0]['peso']) + (zucchine[1]['peso']);
-console.log(`Le zucchine pesano ${pesoZucchine} gr`);
+// console.log(`Le zucchine pesano ${pesoZucchine} gr`);
 
 
 // 3.separa in due array secondo la lunghezza (-15cm), (+15cm)
@@ -88,12 +86,32 @@ var array1 = [];
 var array2 = [];
 
 for ( i=0; i<zucchine.length; i++ ) {
+
     if ( zucchine[i]['lunghezza'] > 15 ) {
-        array1.push( zucchine[i]['lunghezza'] );
+        array1.push( zucchine[i] );
+
     } else {
-        array2.push( zucchine[i]['lunghezza'] );
+        array2.push( zucchine[i] );
     }
 }
 
-console.log(`Array con zucchine più lunghe di 15cm: ${array1}`);
-console.log(`Array con zucchine più corto di 15cm: ${array2}`);
+
+// 4. peso zucchine per singolo array
+// array1
+var pesoArray1 = 0;
+
+for ( i=0; i<array1.length; i++ ) {
+    var pesoArray1 = pesoArray1 + (array1[i]['peso']);
+    // console.log(array1[i]['peso']);
+}
+console.log("peso array1: " + pesoArray1 + "gr");
+
+
+// array2
+var pesoArray2 = 0;
+
+for ( i=0; i<array2.length; i++ ) {
+    var pesoArray2 = pesoArray2 + (array2[i]['peso']);
+    // console.log(array2[i]['peso']);
+}
+console.log("peso array2: " + pesoArray2 + "gr");
