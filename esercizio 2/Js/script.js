@@ -95,5 +95,5 @@ for ( i=0; i<zucchine.length; i++ ) {
     }
 }
 
-console.log(array1);
-console.log(array2);
+console.log(`Array con zucchine più lunghe di 15cm: ${array1}`);
+console.log(`Array con zucchine più corto di 15cm: ${array2}`);
