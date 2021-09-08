@@ -6,18 +6,22 @@ es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 
 // dichiaro due array
 var array1 = ['a', 'b', 'c', 'd'];
-var array2 = [1, 2, 3, 4,];
+var array2 = [1, 2, 3, 4];
 
 // creo la funzione
-function myFunction() {
+function myFunction(arr1, arr2) {
 
+    var arr3 = [];
+
+    for (i=0; i<4; i++) {
+        arr3.push(arr1[i]);
+        arr3.push(arr2[i]);
+    }
+
+    return arr3
 }
 
-var array3 = [];
-
-for (i=0; i<4; i++) {
-    array3.push(array1[i]);
-    array3.push(array2[i]);
-}
+// programma
+var array3 = myFunction(array1, array2);
 
 console.log(array3);
