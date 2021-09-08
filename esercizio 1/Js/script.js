@@ -75,8 +75,9 @@ var pesoZucchine = 0;
 
 for ( i=0; i<zucchine.length; i++ ) {
     var pesoZucchine = pesoZucchine + (zucchine[i]['peso']);
+    console.log(zucchine[i]['peso']);
 }
 
 
 // var pesoZucchine = (zucchine[0]['peso']) + (zucchine[1]['peso']);
-console.log(pesoZucchine);
+console.log(`Le zucchine pesano ${pesoZucchine} gr`);
