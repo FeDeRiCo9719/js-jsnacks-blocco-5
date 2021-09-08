@@ -18,4 +18,5 @@ console.log(parola);
 
 // richiamo la funzione
 var parolaAlContrario = reverseString(parola);
+alert(parolaAlContrario);
 console.log(parolaAlContrario);
