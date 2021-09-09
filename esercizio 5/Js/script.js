@@ -17,7 +17,7 @@ function myFunction(arr, num1, num2) {
 
     for ( i=0; i<arr.length; i++ ) {
 
-        if ( i > num1 && i < num2 ) {
+        if ( i >= num1 && i <= num2 ) {
             newArr.push(arr[i]);
         }
 
